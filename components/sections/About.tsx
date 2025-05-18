@@ -20,19 +20,19 @@ export default function About() {
                 Hi, I'm Your Name
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                I'm a [Your Profession] based in [Your Location]. I have [X years] of experience in [Your Field], 
-                specializing in [Your Specialization]. My journey began when I [brief story about how you got started].
+                I'm a Web Developer based in New York. I have 5 years of experience in full-stack development, 
+                specializing in modern JavaScript frameworks. My journey began when I built my first website during college and got hooked on web development.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                My approach to [Your Field] is focused on [Your Approach/Philosophy]. I believe in 
-                [Your Beliefs about your work] and always strive to [Your Goals].
+                My approach to development is focused on creating clean, maintainable code that delivers exceptional user experiences. I believe in 
+                using the right tool for the job and always strive to stay current with industry best practices.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                When I'm not [working on projects], you can find me [Your Hobbies/Interests]. 
-                I'm also passionate about [Other Passions] and enjoy [Activities].
+                When I'm not coding, you can find me hiking or reading science fiction. 
+                I'm also passionate about photography and enjoy cooking new recipes from around the world.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Skill 1', 'Skill 2', 'Skill 3', 'Skill 4', 'Skill 5'].map((skill) => (
+                {['JavaScript', 'React', 'Node.js', 'TypeScript', 'Next.js'].map((skill) => (
                   <span
                     key={skill}
                     className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300"
@@ -49,6 +49,8 @@ export default function About() {
                   alt="Your Name"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 640px) 256px, (max-width: 768px) 320px, 384px"
+                  unoptimized
                 />
               </div>
             </div>

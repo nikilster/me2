@@ -70,6 +70,7 @@ export default function Press() {
                     width={400}
                     height={250}
                     className="w-full h-full object-cover"
+                    unoptimized
                   />
                 </div>
                 <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-between">
@@ -81,6 +82,7 @@ export default function Press() {
                           alt={item.publication}
                           fill
                           className="object-contain"
+                          unoptimized
                         />
                       </div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">
