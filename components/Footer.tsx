@@ -5,12 +5,12 @@ import Link from 'next/link'
 const navigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Talks', href: '/#talks' },
-    { name: 'Press', href: '/#press' },
-    { name: 'Stories', href: '/#stories' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'About', href: '/about' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Talks', href: '/talks' },
+    { name: 'Press', href: '/press' },
+    { name: 'Stories', href: '/stories' },
+    { name: 'Contact', href: '/contact' },
   ],
   social: [
     {

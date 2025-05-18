@@ -8,12 +8,12 @@ import { usePathname } from 'next/navigation'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/#about' },
-  { name: 'Projects', href: '/#projects' },
-  { name: 'Talks', href: '/#talks' },
-  { name: 'Press', href: '/#press' },
-  { name: 'Stories', href: '/#stories' },
-  { name: 'Contact', href: '/#contact' },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Talks', href: '/talks' },
+  { name: 'Press', href: '/press' },
+  { name: 'Stories', href: '/stories' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar() {
@@ -59,8 +59,7 @@ export default function Navbar() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => {
-                      const isActive = pathname === item.href || 
-                        (pathname === '/' && item.href.startsWith('/#'))
+                      const isActive = pathname === item.href
                       return (
                         <Link
                           key={item.name}
@@ -85,8 +84,7 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 shadow-lg">
               {navigation.map((item) => {
-                const isActive = pathname === item.href || 
-                  (pathname === '/' && item.href.startsWith('/#'))
+                const isActive = pathname === item.href
                 return (
                   <Disclosure.Button
                     key={item.name}

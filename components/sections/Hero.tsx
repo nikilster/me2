@@ -30,10 +30,10 @@ export default function Hero() {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
-                  <Link href="/#projects" className="button-primary">
+                  <Link href="/projects" className="button-primary">
                     View My Work
                   </Link>
-                  <Link href="/#contact" className="button-secondary">
+                  <Link href="/contact" className="button-secondary">
                     Get In Touch
                   </Link>
                 </div>
