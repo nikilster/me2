@@ -2,8 +2,8 @@ import About from '@/components/sections/About'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Me | Personal Website',
-  description: 'Learn more about me, my background, skills, and interests.',
+  title: 'About Me | Nikil Viswanathan',
+  description: 'Learn more about Nikil Viswanathan, Stanford CS graduate, entrepreneur, and creator of Down To Lunch.',
 }
 
 export default function AboutPage() {
