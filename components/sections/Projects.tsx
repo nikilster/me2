@@ -187,18 +187,16 @@ export default function Projects() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   {/* Project image */}
                   <div className="lg:col-span-4">
-                    <div className="relative w-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md">
-                      <div className="w-full min-h-[200px] md:min-h-[300px] relative flex items-center justify-center p-4">
-                        <Image
-                          src={getImagePath(project.image)}
-                          alt={project.title}
-                          className="object-contain max-h-full"
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          priority={index < 5}
-                          unoptimized={true}
-                        />
-                      </div>
+                    <div className="relative w-full aspect-[4/3] rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md flex items-center justify-center p-2">
+                      <Image
+                        src={getImagePath(project.image)}
+                        alt={project.title}
+                        className="object-contain"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority={index < 5}
+                        unoptimized={true}
+                      />
                     </div>
                   </div>
                   
