@@ -14,6 +14,11 @@ export default function Home() {
       link: '/projects',
     },
     {
+      title: 'Fun',
+      description: 'Check out the fun projects I\'ve built for myself and others.',
+      link: '/fun',
+    },
+    {
       title: 'Talks',
       description: 'Watch recordings of my talks and presentations.',
       link: '/talks',

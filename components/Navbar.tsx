@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
+  { name: 'Fun', href: '/fun' },
   { name: 'Talks', href: '/talks' },
   { name: 'Press', href: '/press' },
   { name: 'Stories', href: '/stories' },
@@ -53,7 +54,7 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/" className="text-xl font-bold text-primary-600">
-                    Your Name
+                    Nikil Viswanathan
                   </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
