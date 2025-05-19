@@ -187,7 +187,7 @@ export default function Projects() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   {/* Project image */}
                   <div className="lg:col-span-4">
-                    <div className="relative w-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md bg-gray-100 dark:bg-gray-800">
+                    <div className="relative w-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md">
                       <div className="w-full min-h-[200px] md:min-h-[300px] relative flex items-center justify-center p-4">
                         <Image
                           src={getImagePath(project.image)}
