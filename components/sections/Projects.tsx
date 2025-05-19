@@ -4,6 +4,15 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Helper function to ensure image paths always start with a slash
+const getImagePath = (path: string) => {
+  // Ensure all paths start with a slash
+  if (!path.startsWith('/')) {
+    path = '/' + path;
+  }
+  return path;
+};
+
 // Projects data based on the original website
 const projectsData = [
   {
@@ -178,16 +187,18 @@ export default function Projects() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   {/* Project image */}
                   <div className="lg:col-span-4">
-                    <div className="relative w-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={500}
-                        height={300}
-                        className="object-contain w-full"
-                        priority={index === 0}
-                        unoptimized={true}
-                      />
+                    <div className="relative w-full rounded-md overflow-hidden border border-gray-200 dark:border-gray-700 shadow-md bg-gray-100 dark:bg-gray-800">
+                      <div className="w-full min-h-[200px] md:min-h-[300px] relative flex items-center justify-center p-4">
+                        <Image
+                          src={getImagePath(project.image)}
+                          alt={project.title}
+                          className="object-contain max-h-full"
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          priority={index < 5}
+                          unoptimized={true}
+                        />
+                      </div>
                     </div>
                   </div>
                   
